@@ -97,4 +97,10 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
         print(i.name, i.lat, i.lon)
     return within
 
-cityreader_stretch(45, -100, 32, -120, cities)
+input1 = input("Enter lat1, lon1\n").strip().split(',')
+lat1 = input1[0]
+lon1 = input1[1]
+input2 = input("Enter lat2, lon2\n").strip().split(',')
+lat2 = input2[0]
+lon2 = input2[1]
+cityreader_stretch(lat1, lon1, lat2, lon2, cities)
